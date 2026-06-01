@@ -1,301 +1,171 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+// Landing page oficial Matemática Viva
+// Baseada em captura.html do projeto local
 ---
 
 <!doctype html>
 <html lang="pt-BR">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main class="landing">
-			<!-- Hero -->
-			<section class="hero">
-				<h1>Sua filha acha matemática chata?</h1>
-				<h2>Descubra como ensinar com histórias, beleza e verdade — em uma aula ao vivo gratuita</h2>
-				<p class="hero-date">Dia 10/06/2026, às 21:15. Uma aula viva para pais e filhos que educam em casa.</p>
-				<a href="#inscricao" class="cta-button">📅 Quero garantir minha vaga →</a>
-				<p class="hero-trust">✅ Gratuito • ✅ Vagas limitadas • ✅ Gravação disponível por 7 dias</p>
-			</section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matemática Viva | Evento de Lançamento</title>
+    <meta name="description" content="Inscreva-se no evento de lançamento da Matemática Viva e descubra como ensinar matemática pelo Método Singapura com beleza, ordem e sentido.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Barlow+Condensed:wght@600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/design-system.css">
+    <link rel="stylesheet" href="/captura.css">
+  </head>
+  <body class="capture-page">
+    <header class="capture-hero">
+      <nav class="capture-nav" aria-label="Navegação principal">
+        <p class="nav-alert">Aula gratuita de lançamento da comunidade Matemática Viva para famílias homeschoolers</p>
+      </nav>
 
-			<!-- Problema -->
-			<section class="section problem">
-				<h2>A matemática não precisa ser fria.</h2>
-				<p>Sua filha decora regras. Resolve listas. E nunca entende por que aquilo importa.</p>
-				<p class="highlight">Ela não é burra. Ela só nunca viu a matemática viva.</p>
-				<ul>
-					<li>No quintal da avó, contando mangas</li>
-					<li>Na feira, somando troco com a mãe</li>
-					<li>No formigueiro, separando dezenas e unidades</li>
-					<li>No relógio da capela, acompanhando as horas</li>
-					<li>Na cozinha, medindo farinha para o bolo</li>
-				</ul>
-				<p>A matemática é criação. É ordem. É beleza. E pode ser lembrada pelo cheiro de manga no quintal.</p>
-			</section>
+      <div class="hero-shell">
+        <section class="hero-message" aria-labelledby="hero-title">
+          <div class="hero-badges" aria-label="Informações do evento">
+            <span>Ao vivo e online</span>
+            <span>Material de apoio</span>
+            <span>Método Singapura</span>
+          </div>
 
-			<!-- Solução -->
-			<section class="section solution">
-				<h2>Método Singapura + histórias + fé + beleza</h2>
-				<p>O Matemática Viva é um jeito novo de ensinar matemática:</p>
-				<div class="method-steps">
-					<div class="step">
-						<h3>📥 Concreto primeiro</h3>
-						<p>A criança toca, conta, observa. Formigas. Mangas. Talheres.</p>
-					</div>
-					<div class="step">
-						<h3>🖼️ Pictórico depois</h3>
-						<p>Ilustrações belas ajudam a criança a <em>ver</em> o problema antes de resolvê-lo.</p>
-					</div>
-					<div class="step">
-						<h3>✏️ Abstrato no final</h3>
-						<p>Só depois da experiência e da imagem, a criança chega ao número. Com compreensão real.</p>
-					</div>
-				</div>
-				<p class="closing">Cada aula é uma história. Cada história forma virtude. Cada virtude prepara a alma.</p>
-			</section>
+          <h1 id="hero-title">
+            Seu filho não precisa decorar matemática. Ele precisa enxergá-la
+            <span class="headline-phrase">
+              <span>no quintal,</span>
+              <span>na cozinha,</span>
+              <span>no dia a dia.</span>
+            </span>
+          </h1>
+          <p class="hero-lede">Descubra como transformar matemática em uma experiência concreta, pictórica e abstrata, sem perder beleza nem exigência.</p>
+          <button class="hero-cta" type="button" data-open-form>Quero participar do lançamento</button>
 
-			<!-- O que vai ver -->
-			<section class="section what-to-expect">
-				<h2>O que acontece na aula ao vivo</h2>
-				<ul class="checklist">
-					<li><strong>O método explicado</strong> — Por que o concreto → pictórico → abstrato funciona melhor que o método tradicional</li>
-					<li><strong>Uma história matemática ao vivo</strong> — Você vai ver a Prof. Aline contar uma história com problema, ilustração e resolução — do jeito que seu filho vai aprender</li>
-					<li><strong>Aplicação prática</strong> — Como usar isso na mesa de casa, hoje, sem comprar nada</li>
-					<li><strong>Perguntas e respostas</strong> — Espaço para tirar dúvidas ao vivo sobre o método, materiais e próximos passos</li>
-					<li><strong>Material de apoio</strong> — Quem se inscreve recebe um PDF com o resumo do método e uma atividade para fazer com o filho</li>
-				</ul>
-			</section>
+        </section>
 
-			<!-- Para quem é -->
-			<section class="section audience">
-				<h2>Esta aula é para você se:</h2>
-				<ul class="yes">
-					<li>✓ Você educa os filhos em casa (homeschool)</li>
-					<li>✓ Você é católico e quer materiais que respeitem sua fé</li>
-					<li>✓ Você complementa a escola e sente que a matemática não cola</li>
-					<li>✓ Você é professor e busca um método sequencial e bonito</li>
-					<li>✓ Você simplesmente quer que seu filho <em>ame</em> aprender</li>
-				</ul>
-				<h3>Não é para você se:</h3>
-				<ul class="no">
-					<li>✗ Você acha que matemática só serve para passar em concurso</li>
-					<li>✗ Você não tem 60 minutos para assistir uma aula com seu filho</li>
-					<li>✗ Você prefere apps e joguinhos no lugar de presença e conversa</li>
-				</ul>
-			</section>
+      </div>
+    </header>
 
-			<!-- Quem ensina -->
-			<section class="section instructor">
-				<h2>Conheça a Prof. Aline</h2>
-				<p>Aline Cardoso é ex-professora, mãe e pedagogista. Ela descobriu que a matemática viva transforma crianças que "não gostam de números" em crianças que perguntam <em>"e se a gente contasse as formigas do outro formigueiro?"</em></p>
-				<p>No Matemática Viva, ela une:</p>
-				<ul>
-					<li>Formação pedagógica sólida</li>
-					<li>Método Singapura validado</li>
-					<li>Amor pela narrativa infantil</li>
-					<li>Fé que informa tudo</li>
-				</ul>
-				<blockquote>"Eu não ensino contas. Eu ajudo crianças a pensarem melhor."</blockquote>
-			</section>
+    <main>
+      <section class="capture-section promise-section" aria-labelledby="promise-title">
+        <div class="section-heading capture-heading">
+          <p class="eyebrow">Por que este evento existe</p>
+          <h2 id="promise-title">A matemática fica mais simples quando a criança consegue enxergar o pensamento.</h2>
+          <p>O lançamento apresenta o caminho da Matemática Viva: uma forma de ensinar que respeita a inteligência da criança, aproxima a família e dá repertório prático para professores.</p>
+        </div>
 
-			<!-- CTA Final -->
-			<section class="section cta-final" id="inscricao">
-				<h2>A aula é gratuita. Mas as vagas são limitadas.</h2>
-				<p>Dia 10/06/2026, às 21:15. Ao vivo. Com interação. Para pais e filhos.</p>
-				<p>Se não puder assistir ao vivo, você recebe o link da gravação por 7 dias.</p>
-				<!-- O formulário real virá via Brevo. Por enquanto, apenas CTA. -->
-				<a href="#" class="cta-button cta-large">🚀 Quero minha vaga na aula gratuita</a>
-				<p class="disclaimer">Seu email será usado apenas para enviar o link da aula e materiais. Nada de spam. Nunca vendemos dados.</p>
-			</section>
+        <div class="promise-grid">
+          <article>
+            <span>01</span>
+            <h3>Concreto</h3>
+            <p>A criança toca, reparte, mede, agrupa e observa antes de decorar uma regra.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Pictórico</h3>
+            <p>O raciocínio ganha desenho: barras, quadros, cestos, mapas e registros visuais.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Abstrato</h3>
+            <p>A conta aparece no final, com sentido, vocabulário e confiança para explicar.</p>
+          </article>
+        </div>
+      </section>
 
-			<!-- FAQ -->
-			<section class="section faq">
-				<h2>Dúvidas frequentes</h2>
-				<div class="faq-item">
-					<h3>P: Preciso pagar algo?</h3>
-					<p>R: Não. A aula é 100% gratuita.</p>
-				</div>
-				<div class="faq-item">
-					<h3>P: Meu filho precisa saber matemática para acompanhar?</h3>
-					<p>R: Não. A aula é introdutória. É para <em>pais</em> entenderem o método, e para <em>filhos</em> se encantarem com uma história.</p>
-				</div>
-				<div class="faq-item">
-					<h3>P: Vou receber a gravação?</h3>
-					<p>R: Sim, por email, válida por 7 dias. Mas a interação ao vivo só acontece no dia.</p>
-				</div>
-				<div class="faq-item">
-					<h3>P: O que vem depois da aula?</h3>
-					<p>R: Quem gostar do método poderá entrar para a Comunidade Matemática Viva — com aulas permanentes, trilhas de aprendizagem e grupo de pais. Mas não há obrigação nenhuma.</p>
-				</div>
-				<div class="faq-item">
-					<h3>P: É católico? Meu filho precisa ser católico?</h3>
-					<p>R: O método nasce de uma visão católica da educação e da criação. Mas o conteúdo matemático é universal. Famílias de outras fés são bem-vindas se respeitarem o tom.</p>
-				</div>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <section class="capture-band" aria-labelledby="event-title">
+        <div class="event-copy">
+          <p class="eyebrow">O que acontece na aula</p>
+          <h2 id="event-title">Uma experiência curta, bonita e aplicável.</h2>
+          <p>A proposta não é assistir a uma palestra genérica sobre educação. É sair com um modelo de aula que pode ser repetido em casa, na sala de aula ou em uma primeira sequência de estudos.</p>
+        </div>
+
+        <div class="event-board" aria-label="Roteiro da aula de lançamento">
+          <article>
+            <small>Parte 1</small>
+            <h3>O erro da decoreba</h3>
+            <p>Por que muitas crianças sabem repetir procedimentos, mas travam quando precisam pensar.</p>
+          </article>
+          <article>
+            <small>Parte 2</small>
+            <h3>O caminho Singapura</h3>
+            <p>Como conduzir do objeto real para a representação e da representação para a operação.</p>
+          </article>
+          <article>
+            <small>Parte 3</small>
+            <h3>O Probleminho Vivo</h3>
+            <p>Uma demonstração prática com história, imagem, pergunta e registro matemático.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="capture-section teacher-section" aria-labelledby="teacher-title">
+        <figure class="teacher-art">
+          <img src="/assets/aquarela-capa-aline.png" alt="Crianças estudam matemática em um jardim, com caderno, natureza e ambiente familiar.">
+        </figure>
+
+        <div class="teacher-copy">
+          <p class="eyebrow">Com Aline Tirelli</p>
+          <h2 id="teacher-title">Autoridade de professora com linguagem de casa.</h2>
+          <p>O evento inaugura a Matemática Viva como um projeto para famílias, professores e escolas que querem ensinar com ordem, clareza e encanto. A aula gratuita é o primeiro passo para conhecer a proposta antes da comunidade e dos materiais completos.</p>
+          <ul>
+            <li>Explicações objetivas para adultos.</li>
+            <li>Histórias e imagens que aproximam a criança.</li>
+            <li>Sequência pedagógica para aplicar sem improviso.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <p class="eyebrow">Inscrições abertas</p>
+        <h2 id="final-title">Entre na lista e receba o acesso ao evento de lançamento.</h2>
+        <button type="button" data-open-form>Garantir minha vaga gratuita</button>
+      </section>
+    </main>
+
+    <dialog class="form-popup" aria-labelledby="popup-title">
+      <div class="popup-shell">
+        <button class="popup-close" type="button" aria-label="Fechar formulário" data-close-form>×</button>
+        <div class="popup-heading">
+          <p class="card-label">Inscrição gratuita</p>
+          <h2 id="popup-title">Inscreva-se gratuitamente agora e receba o link da aula + o material de apoio para acompanhamento.</h2>
+        </div>
+        <iframe
+          title="Formulário de inscrição Matemática Viva"
+          width="540"
+          height="305"
+          data-src="https://1dca07ba.sibforms.com/v2/serve/MUIFALn-TyuTQ2ats1dDuHjfTeVbc8Yjg530aMmRaCBNMU8ajhk7QGbIpf5233B-vXIY6kziAMJviP58IEMefL2BE_0WGGiWTuHZUcsLewpMTqYtmS2_BThghe5cTcVSXzlJ_US2akCqRYFzG6Af_IQHEgMu2v2L39McAB6hzD9GpANGtKfWunY0_1AxuSJO4nYH09OMtR_rzoVuyQ=="
+          frameborder="0"
+          scrolling="auto"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </dialog>
+
+    <script is:inline>
+      const popup = document.querySelector(".form-popup");
+      const formFrame = document.querySelector(".form-popup iframe");
+      const openButtons = document.querySelectorAll("[data-open-form]");
+      const closeButton = document.querySelector("[data-close-form]");
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (!formFrame.src) {
+            formFrame.src = formFrame.dataset.src;
+          }
+
+          popup.showModal();
+        });
+      });
+
+      closeButton.addEventListener("click", () => popup.close());
+
+      popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+          popup.close();
+        }
+      });
+    </script>
+  </body>
 </html>
-
-<style>
-	.landing {
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 2em 1em;
-	}
-	.hero {
-		text-align: center;
-		padding: 4em 1em;
-		background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
-		color: white;
-		border-radius: 1em;
-		margin-bottom: 3em;
-	}
-	.hero h1 {
-		font-size: 2.8em;
-		margin-bottom: 0.3em;
-		line-height: 1.1;
-	}
-	.hero h2 {
-		font-size: 1.3em;
-		font-weight: 400;
-		margin-bottom: 1em;
-		opacity: 0.95;
-	}
-	.hero-date {
-		font-size: 1.1em;
-		margin-bottom: 1.5em;
-		opacity: 0.9;
-	}
-	.cta-button {
-		display: inline-block;
-		background: #f4a261;
-		color: #1a1a1a;
-		padding: 0.9em 2em;
-		border-radius: 2em;
-		text-decoration: none;
-		font-weight: 700;
-		font-size: 1.1em;
-		transition: transform 0.2s, box-shadow 0.2s;
-	}
-	.cta-button:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 4px 12px rgba(244, 162, 97, 0.4);
-	}
-	.cta-large {
-		font-size: 1.25em;
-		padding: 1em 2.5em;
-	}
-	.hero-trust {
-		margin-top: 1.2em;
-		font-size: 0.95em;
-		opacity: 0.85;
-	}
-	.section {
-		margin-bottom: 4em;
-		padding: 2em 0;
-		border-bottom: 1px solid #e0e0e0;
-	}
-	.section:last-child {
-		border-bottom: none;
-	}
-	.section h2 {
-		font-size: 1.9em;
-		color: #1a472a;
-		margin-bottom: 0.8em;
-	}
-	.section h3 {
-		font-size: 1.2em;
-		color: #2d6a4f;
-		margin-top: 1.5em;
-		margin-bottom: 0.5em;
-	}
-	.highlight {
-		font-size: 1.2em;
-		font-weight: 600;
-		color: #2d6a4f;
-		margin: 1em 0;
-	}
-	.method-steps {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.5em;
-		margin: 1.5em 0;
-	}
-	.step {
-		background: #f8f9fa;
-		padding: 1.5em;
-		border-radius: 0.8em;
-		border-left: 4px solid #2d6a4f;
-	}
-	.step h3 {
-		margin-top: 0;
-		font-size: 1.1em;
-	}
-	.closing {
-		font-size: 1.1em;
-		font-style: italic;
-		color: #555;
-		margin-top: 1.5em;
-	}
-	.checklist, .yes, .no {
-		list-style: none;
-		padding: 0;
-	}
-	.checklist li, .yes li, .no li {
-		padding: 0.6em 0 0.6em 1.5em;
-		position: relative;
-	}
-	.checklist li::before, .yes li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
-		color: #2d6a4f;
-		font-weight: bold;
-	}
-	.no li::before {
-		content: "✗";
-		position: absolute;
-		left: 0;
-		color: #e76f51;
-		font-weight: bold;
-	}
-	blockquote {
-		border-left: 4px solid #f4a261;
-		padding-left: 1em;
-		margin: 1.5em 0;
-		font-style: italic;
-		color: #555;
-	}
-	.cta-final {
-		text-align: center;
-		background: #f8f9fa;
-		padding: 3em 1em;
-		border-radius: 1em;
-	}
-	.disclaimer {
-		font-size: 0.85em;
-		color: #777;
-		margin-top: 1em;
-	}
-	.faq-item {
-		margin-bottom: 1.5em;
-	}
-	.faq-item h3 {
-		margin-top: 0;
-		font-size: 1.1em;
-		color: #1a1a1a;
-	}
-	@media (max-width: 720px) {
-		.hero h1 {
-			font-size: 2em;
-		}
-		.hero h2 {
-			font-size: 1.1em;
-		}
-	}
-</style>
