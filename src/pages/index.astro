@@ -6,44 +6,296 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="landing">
+			<!-- Hero -->
+			<section class="hero">
+				<h1>Sua filha acha matemática chata?</h1>
+				<h2>Descubra como ensinar com histórias, beleza e verdade — em uma aula ao vivo gratuita</h2>
+				<p class="hero-date">Dia 10/06/2026, às 21:15. Uma aula viva para pais e filhos que educam em casa.</p>
+				<a href="#inscricao" class="cta-button">📅 Quero garantir minha vaga →</a>
+				<p class="hero-trust">✅ Gratuito • ✅ Vagas limitadas • ✅ Gravação disponível por 7 dias</p>
+			</section>
+
+			<!-- Problema -->
+			<section class="section problem">
+				<h2>A matemática não precisa ser fria.</h2>
+				<p>Sua filha decora regras. Resolve listas. E nunca entende por que aquilo importa.</p>
+				<p class="highlight">Ela não é burra. Ela só nunca viu a matemática viva.</p>
+				<ul>
+					<li>No quintal da avó, contando mangas</li>
+					<li>Na feira, somando troco com a mãe</li>
+					<li>No formigueiro, separando dezenas e unidades</li>
+					<li>No relógio da capela, acompanhando as horas</li>
+					<li>Na cozinha, medindo farinha para o bolo</li>
+				</ul>
+				<p>A matemática é criação. É ordem. É beleza. E pode ser lembrada pelo cheiro de manga no quintal.</p>
+			</section>
+
+			<!-- Solução -->
+			<section class="section solution">
+				<h2>Método Singapura + histórias + fé + beleza</h2>
+				<p>O Matemática Viva é um jeito novo de ensinar matemática:</p>
+				<div class="method-steps">
+					<div class="step">
+						<h3>📥 Concreto primeiro</h3>
+						<p>A criança toca, conta, observa. Formigas. Mangas. Talheres.</p>
+					</div>
+					<div class="step">
+						<h3>🖼️ Pictórico depois</h3>
+						<p>Ilustrações belas ajudam a criança a <em>ver</em> o problema antes de resolvê-lo.</p>
+					</div>
+					<div class="step">
+						<h3>✏️ Abstrato no final</h3>
+						<p>Só depois da experiência e da imagem, a criança chega ao número. Com compreensão real.</p>
+					</div>
+				</div>
+				<p class="closing">Cada aula é uma história. Cada história forma virtude. Cada virtude prepara a alma.</p>
+			</section>
+
+			<!-- O que vai ver -->
+			<section class="section what-to-expect">
+				<h2>O que acontece na aula ao vivo</h2>
+				<ul class="checklist">
+					<li><strong>O método explicado</strong> — Por que o concreto → pictórico → abstrato funciona melhor que o método tradicional</li>
+					<li><strong>Uma história matemática ao vivo</strong> — Você vai ver a Prof. Aline contar uma história com problema, ilustração e resolução — do jeito que seu filho vai aprender</li>
+					<li><strong>Aplicação prática</strong> — Como usar isso na mesa de casa, hoje, sem comprar nada</li>
+					<li><strong>Perguntas e respostas</strong> — Espaço para tirar dúvidas ao vivo sobre o método, materiais e próximos passos</li>
+					<li><strong>Material de apoio</strong> — Quem se inscreve recebe um PDF com o resumo do método e uma atividade para fazer com o filho</li>
+				</ul>
+			</section>
+
+			<!-- Para quem é -->
+			<section class="section audience">
+				<h2>Esta aula é para você se:</h2>
+				<ul class="yes">
+					<li>✓ Você educa os filhos em casa (homeschool)</li>
+					<li>✓ Você é católico e quer materiais que respeitem sua fé</li>
+					<li>✓ Você complementa a escola e sente que a matemática não cola</li>
+					<li>✓ Você é professor e busca um método sequencial e bonito</li>
+					<li>✓ Você simplesmente quer que seu filho <em>ame</em> aprender</li>
+				</ul>
+				<h3>Não é para você se:</h3>
+				<ul class="no">
+					<li>✗ Você acha que matemática só serve para passar em concurso</li>
+					<li>✗ Você não tem 60 minutos para assistir uma aula com seu filho</li>
+					<li>✗ Você prefere apps e joguinhos no lugar de presença e conversa</li>
+				</ul>
+			</section>
+
+			<!-- Quem ensina -->
+			<section class="section instructor">
+				<h2>Conheça a Prof. Aline</h2>
+				<p>Aline Cardoso é ex-professora, mãe e pedagogista. Ela descobriu que a matemática viva transforma crianças que "não gostam de números" em crianças que perguntam <em>"e se a gente contasse as formigas do outro formigueiro?"</em></p>
+				<p>No Matemática Viva, ela une:</p>
+				<ul>
+					<li>Formação pedagógica sólida</li>
+					<li>Método Singapura validado</li>
+					<li>Amor pela narrativa infantil</li>
+					<li>Fé que informa tudo</li>
+				</ul>
+				<blockquote>"Eu não ensino contas. Eu ajudo crianças a pensarem melhor."</blockquote>
+			</section>
+
+			<!-- CTA Final -->
+			<section class="section cta-final" id="inscricao">
+				<h2>A aula é gratuita. Mas as vagas são limitadas.</h2>
+				<p>Dia 10/06/2026, às 21:15. Ao vivo. Com interação. Para pais e filhos.</p>
+				<p>Se não puder assistir ao vivo, você recebe o link da gravação por 7 dias.</p>
+				<!-- O formulário real virá via Brevo. Por enquanto, apenas CTA. -->
+				<a href="#" class="cta-button cta-large">🚀 Quero minha vaga na aula gratuita</a>
+				<p class="disclaimer">Seu email será usado apenas para enviar o link da aula e materiais. Nada de spam. Nunca vendemos dados.</p>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section faq">
+				<h2>Dúvidas frequentes</h2>
+				<div class="faq-item">
+					<h3>P: Preciso pagar algo?</h3>
+					<p>R: Não. A aula é 100% gratuita.</p>
+				</div>
+				<div class="faq-item">
+					<h3>P: Meu filho precisa saber matemática para acompanhar?</h3>
+					<p>R: Não. A aula é introdutória. É para <em>pais</em> entenderem o método, e para <em>filhos</em> se encantarem com uma história.</p>
+				</div>
+				<div class="faq-item">
+					<h3>P: Vou receber a gravação?</h3>
+					<p>R: Sim, por email, válida por 7 dias. Mas a interação ao vivo só acontece no dia.</p>
+				</div>
+				<div class="faq-item">
+					<h3>P: O que vem depois da aula?</h3>
+					<p>R: Quem gostar do método poderá entrar para a Comunidade Matemática Viva — com aulas permanentes, trilhas de aprendizagem e grupo de pais. Mas não há obrigação nenhuma.</p>
+				</div>
+				<div class="faq-item">
+					<h3>P: É católico? Meu filho precisa ser católico?</h3>
+					<p>R: O método nasce de uma visão católica da educação e da criação. Mas o conteúdo matemático é universal. Famílias de outras fés são bem-vindas se respeitarem o tom.</p>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.landing {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2em 1em;
+	}
+	.hero {
+		text-align: center;
+		padding: 4em 1em;
+		background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+		color: white;
+		border-radius: 1em;
+		margin-bottom: 3em;
+	}
+	.hero h1 {
+		font-size: 2.8em;
+		margin-bottom: 0.3em;
+		line-height: 1.1;
+	}
+	.hero h2 {
+		font-size: 1.3em;
+		font-weight: 400;
+		margin-bottom: 1em;
+		opacity: 0.95;
+	}
+	.hero-date {
+		font-size: 1.1em;
+		margin-bottom: 1.5em;
+		opacity: 0.9;
+	}
+	.cta-button {
+		display: inline-block;
+		background: #f4a261;
+		color: #1a1a1a;
+		padding: 0.9em 2em;
+		border-radius: 2em;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.1em;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(244, 162, 97, 0.4);
+	}
+	.cta-large {
+		font-size: 1.25em;
+		padding: 1em 2.5em;
+	}
+	.hero-trust {
+		margin-top: 1.2em;
+		font-size: 0.95em;
+		opacity: 0.85;
+	}
+	.section {
+		margin-bottom: 4em;
+		padding: 2em 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+	.section:last-child {
+		border-bottom: none;
+	}
+	.section h2 {
+		font-size: 1.9em;
+		color: #1a472a;
+		margin-bottom: 0.8em;
+	}
+	.section h3 {
+		font-size: 1.2em;
+		color: #2d6a4f;
+		margin-top: 1.5em;
+		margin-bottom: 0.5em;
+	}
+	.highlight {
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #2d6a4f;
+		margin: 1em 0;
+	}
+	.method-steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.5em;
+		margin: 1.5em 0;
+	}
+	.step {
+		background: #f8f9fa;
+		padding: 1.5em;
+		border-radius: 0.8em;
+		border-left: 4px solid #2d6a4f;
+	}
+	.step h3 {
+		margin-top: 0;
+		font-size: 1.1em;
+	}
+	.closing {
+		font-size: 1.1em;
+		font-style: italic;
+		color: #555;
+		margin-top: 1.5em;
+	}
+	.checklist, .yes, .no {
+		list-style: none;
+		padding: 0;
+	}
+	.checklist li, .yes li, .no li {
+		padding: 0.6em 0 0.6em 1.5em;
+		position: relative;
+	}
+	.checklist li::before, .yes li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #2d6a4f;
+		font-weight: bold;
+	}
+	.no li::before {
+		content: "✗";
+		position: absolute;
+		left: 0;
+		color: #e76f51;
+		font-weight: bold;
+	}
+	blockquote {
+		border-left: 4px solid #f4a261;
+		padding-left: 1em;
+		margin: 1.5em 0;
+		font-style: italic;
+		color: #555;
+	}
+	.cta-final {
+		text-align: center;
+		background: #f8f9fa;
+		padding: 3em 1em;
+		border-radius: 1em;
+	}
+	.disclaimer {
+		font-size: 0.85em;
+		color: #777;
+		margin-top: 1em;
+	}
+	.faq-item {
+		margin-bottom: 1.5em;
+	}
+	.faq-item h3 {
+		margin-top: 0;
+		font-size: 1.1em;
+		color: #1a1a1a;
+	}
+	@media (max-width: 720px) {
+		.hero h1 {
+			font-size: 2em;
+		}
+		.hero h2 {
+			font-size: 1.1em;
+		}
+	}
+</style>

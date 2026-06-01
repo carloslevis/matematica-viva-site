@@ -6,7 +6,8 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	// URL temporária no Vercel. Quando o domínio for comprado, trocar para https://matematicaviva.com.br
+	site: 'https://matematica-viva.vercel.app',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
